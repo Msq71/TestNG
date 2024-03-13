@@ -9,7 +9,7 @@ import sda.utilities.TestBase;
 
 public class Hw1_HardVsSoftAssertion extends TestBase {
 
-/*
+/* D15HW01:
 Test Case1: Positive Login Test
 Open page https://practicetestautomation.com/practice-test-login/
 Type username student into Username field
