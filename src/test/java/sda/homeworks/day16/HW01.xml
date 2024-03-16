@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Hw01">
+
+    <test name="Test1">
+        <parameter name="wordToSearch" value="Java"></parameter>
+        <classes>
+            <class name="sda.homeworks.day16.Hw01">
+                <methods><include name="test1"></include></methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Test2">
+        <parameter name="wordToSearch" value="Selenium"></parameter>
+        <classes>
+            <class name="sda.homeworks.day16.Hw01">
+                <methods><include name="test2"> </include></methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -45,7 +45,6 @@ public class Hw3_HardVsSoftAssertion extends TestBase {
         String expected = "Your password is invalid!";
         String actual = errorMessage.getText();
 
-
         sa.assertEquals(actual, expected);
 
         sa.assertAll();

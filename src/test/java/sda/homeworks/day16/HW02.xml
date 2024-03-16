@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Hw01">
+
+    <test name="Positive Test">       <!-- Try to log in with correct username and correct password -->
+        <parameter name="username" value="student"></parameter>
+        <parameter name="password" value="Password123"></parameter>
+        <classes>
+            <class name="sda.homeworks.day16.Hw02">
+                <methods>
+                    <include name="hardAssertion"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Negative Test1">     <!-- Try to log in with correct username and wrong password -->
+        <parameter name="username" value="student"></parameter>
+        <parameter name="password" value="wrongPassword"></parameter>
+        <classes>
+            <class name="sda.homeworks.day16.Hw02">
+                <methods>
+                    <include name="NegativeTest"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Negative Test2">   <!-- Try to log in with wrong username and correct password -->
+        <parameter name="username" value="stu"></parameter>
+        <parameter name="password" value="Password123"></parameter>
+        <classes>
+            <class name="sda.homeworks.day16.Hw02">
+                <methods>
+                    <include name="NegativeTest"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Negative Test3">   <!-- Try to log in with wrong username and wrong password -->
+        <parameter name="username" value="st"></parameter>
+        <parameter name="password" value="wrongPasswordd"></parameter>
+        <classes>
+            <class name="sda.homeworks.day16.Hw02">
+                <methods>
+                    <include name="NegativeTest"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Negative Test4">   <!-- Try to log in with empty username and correct password -->
+        <parameter name="username" value=""></parameter>
+        <parameter name="password" value="Password123"></parameter>
+        <classes>
+            <class name="sda.homeworks.day16.Hw02">
+                <methods>
+                    <include name="NegativeTest"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
