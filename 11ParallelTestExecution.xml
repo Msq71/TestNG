@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Tests Suite" parallel="methods" thread-count="4">
+
+    <test name="Test 1">
+        <classes>
+            <class name="sda.tests.day18.C05ParallelTest03"></class>
+        </classes>
+    </test>
+</suite>

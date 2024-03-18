@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="classes" thread-count="3">
+
+    <!--    //    Day18HW:3-->
+    <!--Execute C04DependsOnMethods class, HardAssertionHomework and SoftAssertionHomework in parallel-->
+    <!--(If you find problem with class names you can select any three classes from your project)-->
+    <!--Thread num should be 3 and execution  should be done in "class" level-->
+    <test name="Test 1">
+        <classes>
+            <class name="sda.tests.day15.C04DependsOnMethods">
+            </class>
+            <class name="sda.homeworks.day15.Hw1_HardVsSoftAssertion">
+            </class>
+            <class name="sda.homeworks.day15.Hw2_HardVsSoftAssertion">
+            </class>
+        </classes>
+    </test>
+</suite>
+
+        <!-- To add comments: -->
+        <!-- With an XML file, we can run specific tests, packages, classes, or test methods from our project.
+            To achieve this, we need to write all the tests that will run according to the test hierarchy in XML format.
+            If we need to create multiple hierarchies to access all the desired tests,
+            we must start the subsequent hierarchies from the appropriate breakpoint.
+
+            If we need to create multiple hierarchies within a test,
+            we can identify a suitable breakpoint and rebuild the hierarchy from there.
+        -->

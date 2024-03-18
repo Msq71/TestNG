@@ -1,4 +1,4 @@
-package sda;
+package sda.javaPracticeQuestions;
 
 public class JavaPracticeQuestions {
     public static void main(String[] args) {

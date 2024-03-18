@@ -23,11 +23,11 @@ public abstract class TestBase {
     Therefore, we choose the protected access modifier for the driver variable we created.
      */
 
-    protected static WebDriver driver;
+    protected  WebDriver driver;
 
 
     @BeforeMethod
-    public static void setUp() {
+    public  void setUp() {
         driver = new ChromeDriver();
         // driver = new EdgeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -35,7 +35,7 @@ public abstract class TestBase {
     }
 
     @AfterMethod
-    public static void tearDown() {
+    public  void tearDown() {
         if (driver != null) {
             driver.quit();
             driver = null;
